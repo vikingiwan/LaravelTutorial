@@ -61,6 +61,7 @@
                 <div class="title m-b-md">
                     Pizza List
                 </div>
+                <p>{{ $type }} - {{$base}} - {{ $price }}</p>
             </div>
         </div>
     </body>
