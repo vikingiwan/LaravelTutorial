@@ -7,7 +7,7 @@
             Pizza List
         </div>
 
-        <p>{{ $name }} - {{ $age }}</p>
+        <p>{{ $name ?? '' }} - {{ $age ?? '' }}</p>
 
         @foreach($pizzas as $pizza)
             <div>
