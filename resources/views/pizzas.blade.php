@@ -61,7 +61,19 @@
                 <div class="title m-b-md">
                     Pizza List
                 </div>
-                <p>{{ $type }} - {{$base}} - {{ $price }}</p>
+
+                <!--
+                @for($i = 0; $i < count($pizzas); $i++)
+                    <p>{{ $pizzas[$i]['type'] }}</p>
+                @endfor
+                -->
+
+                @foreach($pizzas as $pizza)
+                    <div>
+                        {{ $pizza['type'] }} - {{ $pizza['base'] }}
+                    </div>
+                @endforeach
+
             </div>
         </div>
     </body>
