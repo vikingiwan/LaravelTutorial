@@ -17,6 +17,7 @@
 @endif
 
 <div class="content">
+    <img src="/img/pizza-house.png" alt="logo">
     <div class="title m-b-md">
         Pizza Palace
     </div>
