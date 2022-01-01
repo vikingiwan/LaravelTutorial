@@ -38,8 +38,8 @@ class PizzaController extends Controller
         $pizza->type = request('type');
         $pizza->base = request('base');
 
-        error_log($pizza);
+        $pizza->save();
 
-        return redirect('/');
+        return redirect('/')->with('msg', 'Thank you for your Order');
     }
 }
