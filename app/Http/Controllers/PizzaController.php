@@ -14,7 +14,7 @@ class PizzaController extends Controller
         //$pizzas = Pizza::where('type', 'hawaiian')->get();
         $pizzas = Pizza::latest()->get();
     
-        return view('pizzas', [
+        return view('pizzas.pizzas', [
             'pizzas' => $pizzas
         ]);
     }
@@ -23,6 +23,10 @@ class PizzaController extends Controller
         
         $pizza = Pizza::findOrFail($id);
         
-        return view('details', ['pizza' => $pizza]);
+        return view('pizzas.details', ['pizza' => $pizza]);
+    }
+
+    public function create(){
+        return view('pizzas.create');
     }
 }
