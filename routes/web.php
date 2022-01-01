@@ -27,3 +27,7 @@ Route::post('/pizzas', [PIzzaController::class, 'store']);
 Route::get('/pizzas/{id}', [PizzaController::class, 'show']);
 
 Route::delete('/pizzas/{id}', [PIzzaController::class, 'destroy']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
