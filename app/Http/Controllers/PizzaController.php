@@ -43,4 +43,9 @@ class PizzaController extends Controller
 
         return redirect('/')->with('msg', 'Thank you for your Order');
     }
+
+    public function destroy($id){
+
+    }
+
 }
