@@ -20,6 +20,7 @@
                 <option value="thin & crispy">thin & crispy</option>
                 <option value="thick">thick</option>
             </select>
+            <input type="submit" value="Order Pizza">
         </form>
     </div>
 @endsection
