@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Pizza extends Model
 {
     use HasFactory;
+    
     //Override database
     protected $table = 'pizzas';
 
-    
+    protected $casts = [
+        'toppings' => 'array'
+    ];
 }
